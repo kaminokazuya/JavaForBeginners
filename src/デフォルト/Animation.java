@@ -123,39 +123,40 @@ public class Animation extends MyFrame {
 			}
 		}
 	 }*/
-	
-	public void run() {
+	//5-EX2
+	/*public void run() {
 		int y=100;
 		int x=30;
+		int count=1;
+
 		while(true) {
-			while(x<=170) {
+			if(count%2==1) {
+				x+=10;
+			} else if(count%2==0) {
+				x-=10;
+			}
+			int z=0;
+			while(x<=170 && x>=30) {
 				clear();
 				setColor(0,128,0);
 				fillRect(x,y,10,100);
-				x+=5;
+				if(count%2==1) {
+				   x+=5;
+				}else if(count%2==0){
+					x-=5;
+				}
 				sleep(0.1);
 			}
-			for(int i=0;i<20;i++) {
-				clear();
-				setColor(0,128,0);
-				fillRect(x,y,10,100);
-				y+=5;
-				sleep(0.1);
-			}
-			while(x>=30) {
-				clear();
-				setColor(0,128,0);
-				fillRect(x,y,10,100);
-				x-=5;
-				sleep(0.1);
-			}
-			for(int i=0;i<20;i++) {
+			while(z<20) {
 				clear();
 				setColor(0,128,0);
 				fillRect(x,y,10,100);
 				y+=5;
+				z+=1;
 				sleep(0.1);
 			}
+			count+=1;
 		}
-	 }
+	 }*/
 }
+	
