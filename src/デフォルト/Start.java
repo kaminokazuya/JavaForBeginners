@@ -5,7 +5,7 @@ public class Start {
 
 	public static void main(String[] args) {
 		System.out.println("プログラムを実行します");
-		MyFrame f=new CarVector();
+		MyFrame f=new DisplayCarsTrains();
 	}
 
 }
