@@ -1,5 +1,7 @@
 package デフォルト;
 
+import java.awt.Window;
+
 public class DisplayCarsTrains extends MyFrame {
 	public void run() {
 		Vehicle[] Vehicles=new Vehicle[6];
@@ -9,7 +11,7 @@ public class DisplayCarsTrains extends MyFrame {
 		Vehicles[3]=new Train(150,240,-3,0);
 		Vehicles[4]=new Truck(10,310,3,0);
 		Vehicles[5]=new Truck(150,370,-3,0);
-		for(int i=0; i<30; i++) {
+		for(int i=0; i<60; i++) {
 			clear();
 			for (int j=0; j<Vehicles.length; j++) {
 				Vehicles[j].draw(this);
